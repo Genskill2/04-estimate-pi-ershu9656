@@ -3,14 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int i){
-float pi_est=1.00; 
-	for(int a=1;a<=i;a=a+1){
-		 float numerator=4*a*a;
-		 float denominator=4*a*a-1;
-		 pi_est=pi_est*(4*a*a)/(4*a*a-1);
-	}
-	return pi_est*2;
+float wallis_pi(int i);
+
 
 
 }
@@ -33,3 +27,14 @@ int main(void) {
     }
   }
 }
+
+float wallis_pi(int i){
+float pi_est=1.00; 
+	for(int a=1;a<=i;a=a+1){
+		 float numerator=4*a*a;
+		 float denominator=4*a*a-1;
+		 pi_est=pi_est*(4*a*a)/(4*a*a-1);
+	}
+	return pi_est*2;
+}
+
