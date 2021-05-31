@@ -7,7 +7,7 @@ float wallis_pi(int i);
 
 
 
-}
+
 
 int main(void) {
   float pi;
