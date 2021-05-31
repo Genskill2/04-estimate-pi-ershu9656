@@ -38,6 +38,24 @@ int main(void) {
     }
   }
 }
+float mc_pi(int n){
 
+  float count=0;
+  for(int i=0;i<n;i++)
+  {
+    
+    float x_axis=frandom();
+    float y_axis=frandom();
+    float dist=sqrt(x_axis*x_axis+y_axis*y_axis);
+    
+    if(dist<=1)
+    {
+      count=count+1;
 
+    }
 
+  }
+  float mc=count/n;
+  return mc*4;
+
+}
